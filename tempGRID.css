@@ -1,0 +1,158 @@
+.container {
+  background-color: #ccc;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.item {
+  background-color: #00f;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.item3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.item8 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.item10 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+.item11 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+/*  */
+.container2 {
+  margin-top: 50px;
+  background-color: #ccc;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+.itema {
+  grid-column: 1 / span 4;
+
+  grid-row: 1 / span 1;
+}
+.itemb {
+  grid-column: 5/6;
+
+  grid-row: 1/5;
+}
+.itemc {
+  grid-column: 1/2;
+
+  grid-row: 2/6;
+}
+.itemn {
+  grid-column: 2/6;
+
+  grid-row: 5/6;
+}
+
+/* Grid Area */
+.container3 {
+  margin-top: 50px;
+  background-color: #ccc;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+/* 1. grid-row-start
+   2. grid-column-start
+   3. grid-row-end
+   4. grid-colomn-end */
+
+.item21 {
+  grid-area: 1/1 / span 1 / span 4;
+}
+.item22 {
+  grid-area: 1/5/5/6;
+}
+.item23 {
+  grid-column: 1/2;
+
+  grid-row: 2/6;
+}
+.item32 {
+  grid-column: 2/6;
+
+  grid-row: 5/6;
+}
+
+/* Template Area */
+.container4 {
+  margin-top: 50px;
+  background-color: #ccc;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    " item41 item41 item41 item41 item42"
+    " item43 item40 item44 item45 item42"
+    " item43 item46 item47 item48 item42"
+    " item43 item49 item50 item51 item42"
+    " item43 item52 item52 item52 item52";
+}
+
+.item40 {
+  grid-area: item40;
+}
+.item41 {
+  grid-area: item41;
+}
+.item42 {
+  grid-area: item42;
+}
+.item43 {
+  grid-area: item43;
+}
+.item44 {
+  grid-area: item44;
+}
+.item45 {
+  grid-area: item45;
+}
+.item46 {
+  grid-area: item46;
+}
+.item47 {
+  grid-area: item47;
+}
+.item48 {
+  grid-area: item48;
+}
+.item49 {
+  grid-area: item49;
+}
+.item50 {
+  grid-area: item50;
+}
+.item51 {
+  grid-area: item51;
+}
+.item52 {
+  grid-area: item52;
+}
